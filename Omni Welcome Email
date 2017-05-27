@@ -7,13 +7,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
 
     <title>Welcome to Omni!</title>
-  <style>
-    @media only screen and (min-device-width: 601px) {
-.content {width: 600px !important;}
-.col425 {width: 425px!important;}
-.col380 {width: 380px!important;}
-}
-  </style>
 </head>
 
 <body style="padding:0; margin:0">
