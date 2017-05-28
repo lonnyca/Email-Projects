@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ 		body,
+		#bodyTable {
+			height:100% !important;
+			width:100% !important;
+			margin:0;
+			padding:0;
+		}
+		body,
+		table,
+		td,
+		p,
+		a,
+		li,
+		blockquote {
+			-ms-text-size-adjust:100%;
+			-webkit-text-size-adjust:100%;
+		}
+		.thread-item.expanded .thread-body .body, .msg-body {
+			width: 100% !important;
+			display: block !important;
+		}
+    .ReadMsgBody,
+    .ExternalClass {
+			width: 100%;
+			background-color: #f4f4f4;
+    }
+		.ExternalClass,
+		.ExternalClass p,
+		.ExternalClass span,
+		.ExternalClass font,
+		.ExternalClass td,
+		.ExternalClass div {
+			line-height:100%;
+    }
+    table {
+			border-spacing:0;
+    }
+    table,
+    td {
+			border-collapse:collapse;
+			mso-table-lspace:0pt;
+			mso-table-rspace:0pt;
+    }
+    img {
+    	-ms-interpolation-mode: bicubic;
+    	max-width:100% !important; 
+	    height: auto !important;
+      align: center;
+    }
+    img,
+    a img {
+    	border:0;
+    	outline:none;
+    	text-decoration:none;	    
+    }
+    .yshortcuts a {
+			border-bottom: none !important;
+    }
+    a[href^=tel],
+		.mobile_link,
+		.mobile_link a {
+	    color:#222222 !important;
+			text-decoration: underline !Important;
+    }
+
+
+img[class="ImageURL"] {
+      max-width:100% !important; 
+      height: auto !important;
+}
+
+img[class="responsive"] {
+      max-width:100% !important; 
+      height: auto !important;
+}
+
+table[class="fluid"] {
+	width: 100% !important;
+}
+
+.ObjFull {
+	display : block;
+	width : auto;
+	max-height: inherit;
+	overflow : visible;
+	float : none;
+	visibility:visible;
+	overflow:visible;
+	line-height:normal;
+}
+.ObjFullMed {
+	display : block;
+	width : auto;
+	max-height: inherit;
+	overflow : visible;
+	float : none;
+	visibility:visible;
+	overflow:visible;
+	line-height:normal;
+}
+.ObjMed {
+	display: none !important;
+	font-size: 0; 
+	max-height: 0; 
+	line-height: 0; 
+	padding: 0;
+	mso-hide: all;
+	visibility: hidden;
+	overflow: hidden;
+}
+.ObjSmall {
+	display: none !important;
+	font-size: 0; 
+	max-height: 0; 
+	line-height: 0; 
+	padding: 0;
+	mso-hide: all;
+	visibility: hidden;
+	overflow: hidden;
+}
+
+@media screen and (max-width:800px) {
+	table {
+		width:100% !important;
+	}
+
+	table[class="email-container"] {
+		width: 100% !important;
+	}
+	table[class="fluid"] {
+		width: 100% !important;
+	}
+	img[class="fluid"],
+	img[class="force-col-center"],
+	img[class="ImageURL"],
+	img[class="responsive"] {
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+	}
+		img[class="force-col-center"] {
+		margin: auto !important;
+	}
+	
+	td[class="force-col"],
+	td[class="force-col-center"] {
+		display: block !important;
+		width: 100% !important;
+		clear: both;
+	}
+	td[class="force-col-center"] {
+		text-align: center !important;
+	}
+	
+	img[class="col-3-img-l"] {
+		float: left;
+		margin: 0 15px 15px 0;
+	}
+	img[class="col-3-img-r"] {
+		float: right;
+		margin: 0 0 15px 15px;
+	}
+	
+	table[class="button"] {
+		width: 100% !important;
+	}    
+}
+
+@media screen and (max-device-width: 480px), screen and (max-width: 480px) {
+
+	div[class="hh-visible"] {
+		display: block !important;
+	}
+	
+	div[class="hh-center"] {
+		text-align: center;
+		width: 100% !important;
+	}
+	
+	table[class="hh-fluid"] {
+		width: 100% !important;
+	}
+	
+	img[class="hh-fluid"],
+	img[class="hh-force-col-center"] {
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+	}
+	img[class="hh-force-col-center"] {
+		margin: auto !important;
+	}
+		td[class="hh-force-col"],
+	td[class="hh-force-col-center"] {
+		display: block !important;
+		width: 100% !important;
+		clear: both;
+	}
+	td[class="hh-force-col-center"] {
+		text-align: center !important;
+	}
+	
+	img[class="col-3-img-l"],
+	img[class="col-3-img-r"] {
+		float: none !important;
+		margin: 15px auto !important;
+		text-align: center !important;
+	}
+	.ObjFull {	
+	display: none; 
+	font-size: 0; 
+	max-height: 0; 
+	line-height: 0; 
+	mso-hide: all;
+	visibility: hidden;
+	overflow: hidden;
+}
+	.ObjSmall {
+	display: none; 
+	font-size: 0; 
+	max-height: 0; 
+	line-height: 0; 
+	mso-hide: all; 
+	visibility: hidden;
+	overflow: hidden;
+}
+	.ObjMed {	
+	display : block !important;
+	width : auto !important;
+	line-height:normal !important;
+	max-height: inherit !important;
+	overflow : visible !important;
+	float : none !important;
+	visibility:visible !important;
+	overflow:visible !important;
+}
+	.ObjFullMed {	
+	display : block !important;
+	width : auto !important;
+	line-height:normal !important;
+	max-height: inherit !important;
+	overflow : visible !important;
+	float : none !important;
+	visibility:visible !important;
+	overflow:visible !important;
+  }
+}
+
+@media screen and (max-device-width: 375px), screen and (max-width: 375px) {
+
+#HeaderNavBar {	
+	display: none; 
+	font-size: 0; 
+	max-height: 0; 
+	line-height: 0; 
+	mso-hide: all; 
+	visibility: hidden;
+	overflow: hidden;
+}
+.ObjFull {	
+	display: none; 
+	font-size: 0; 
+	max-height: 0; 
+	line-height: 0; 
+	mso-hide: all; 
+	visibility: hidden;
+	overflow: hidden;
+}
+	.ObjMed {	
+	display: none !important;
+	font-size: 0 !important;
+	max-height: 0 !important;
+	line-height: 0 !important; 
+	mso-hide: all !important; 
+	visibility: hidden !important;
+	overflow: hidden !important;
+}
+	.ObjFullMed {	
+	display: none !important;
+	font-size: 0 !important;
+	max-height: 0 !important;
+	line-height: 0 !important; 
+	mso-hide: all !important; 
+	visibility: hidden !important;
+	overflow: hidden !important;
+}
+	.ObjSmall {
+	display : block !important;
+	width : auto !important;
+	max-height: inherit !important;
+	line-height:normal !important;
+	overflow : visible !important;
+	float : none !important;
+	visibility:visible !important;
+	overflow:visible !important;
+  }
+}
+ </style>
+</head>
+
+<body>
+<center>
+<table width="640" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="font-family:Calibri;">
+  <tr>
+    <td>
+      <table width="640" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+        <tr>
+          <td align="center"><p style="font-size:2pt">&#160;</p><p style="font-family:Arial, Helvetica,
+sans-serif; font-size:8pt">If you can't view this e-mail, please click<a href="http://multibriefs.com/briefs/npf/Sept.html">here</a>.</p><p style="font-size:2pt">&#160;</p>
+          </td>
+         </tr>
+      </table>
+      <table width="640" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+        <tr>
+         <td>
+           <table width="640" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+     
+<!--Header-->
+       <tr>
+        <td>
+          <img src="http://www.multibriefs.com/briefs/dedicated/Gstirrup/gstirrup_header.png" width="640" height="131" title="GStirrup header" alt="GStirrup header" style="display: block;">
+        </td>
+       </tr>
+       <tr>
+        <td>
+         
+<!--Body wrapper-->
+         <table align="center" width="600" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+            <tr>
+              <td>
+                
+<!--Body content-->
+                 <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#404040">
+                   <tr>
+                     <td bgcolor="#ffffff" height="35px;">
+                     </td>
+                   </tr>
+                   <tr>
+                     <td><img src="http://www.multibriefs.com/briefs/dedicated/gstirrup/gstirrup_hero.png" width="600" height="579" style="display: block; padding: 10px 0 30px 0; line-height:125%;"></td>
+                   </tr>
+                   <tr>
+                     <td bgcolor="#ffffff" align="center" style="font-size: 16px; color:#df1212; font-style: italic; font-family:verdana, sans-serif; padding: 35px;">Disabled Access Tax Credit Available. Final Price after tax credit $672.50 &ndash; <a href="http://www.multibriefs.com/briefs/dedicated/gstirrup8826.02.pdf" style="color: #31b1e8;">Tax Form 8826.
+                      </td>
+                    </tr>
+                 </table>
+                 
+                 <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#404040">
+                   <tr>
+                     <td bgcolor="#404040" align="center" style="font-size: 14px; line-height:150%; font-family:Helvetica, sans-serif; color:#f2f2f2; padding: 15px 0 15px 0;">Developed by Joseph Gauta, M.D.<br>
+Board Certified in OB/Gyn & Female Pelvic Medicine & Reconstructive Surgery<br><a href="https://www.youtube.com/watch?v=UakuyehWj_w" style="color: #31b1e8;">Click Here to Watch How it Works</a>
+                    </td>
+                   </tr>
+                   <tr>
+                     <td><a href="https://www.youtube.com/watch?v=UakuyehWj_w"><img src="http://www.multibriefs.com/briefs/dedicated/gstirrup/gstirrup_hero2.jpg" alt="GStirrup boot" width="600" height="768" style="display: block; padding-bottom: 15px;"></a>
+                    </td>
+                  </tr>
+                </table>
+                
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td bgcolor="#ffffff"          
+                      height="45px">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#404040" align="center" style="font-size: 18px; line-height:200%; font-family:Helvetica,sans-serif; color: #f2f2f2; padding: 15px 0 35px 0;">Start your year off right by making sure your office is<br>properly equipped with the GStirrup<br>Use Coupon <i>GStirrup2017</i> for $100 off<br><a href="http://www.gstirrup.com/" style="color: #31b1e8; font-size: 20px;">Click Here to Order</a><br><span style="font-size: 14px;">or contact your preferred distributor</span>
+                   </td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#ffffff" height="30px">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="font-family: Helvetica,sans-serif; color:#202020; font-size: 16px; line-height:125%; padding-bottom: 35px;">Guaranteed You Will Love Them or Your Money Back<br>Read Reviews at  <a href="http://www.gstirrup.com/" style="color: #31b1e8;">www.GStirrup.com</a>
+                    </td>
+                   </tr>
+                 </table>
+                  
+                 <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                   <tr>
+                     <td width="50%" style="font-weight: bold; font-size: 16px; font-family: Helvetica,sans-serif; color: #202020; line-height: 125%; padding: 0 0 40px 0;">
+                       <span style="font-size: 20px; text-align: center;">Ensure You're Compliant With The New January 9th, 2017 U.S. Access Board Standards</span><br><br>M302.2 Leg Supports. Where stirrups are provided, leg supports shall also be provided and comply with M305.4<br><br>M305.4 Leg Supports. Leg supports shall provide a method of supporting, positioning, and securing the patient's legs.<br><br>
+                    </td>
+                    <td width="50%" valign="top" align="right"><img src="http://www.multibriefs.com/briefs/dedicated/gstirrup/gstirrup_compliant.png" alt="Ensure you're compliant with the January 9, 2017 U.S. Access Board Standards" width="270" height="270" style="display: block; padding-bottom: 15px;"></td>
+                </table>
+               </tr>
+              </td>   
+            </table>
+           </td>
+          </tr>
+         </table>
+        </td>
+       </tr>
+      </table>
+     </center>
+    </body>
+   </html>
