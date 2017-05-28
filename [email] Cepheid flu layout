@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+		body,
+		#bodyTable {
+			height:100% !important;
+			width:100% !important;
+			margin:0;
+			padding:0;
+		}
+		body,
+		table,
+		td,
+		p,
+		a,
+		li,
+		blockquote {
+			-ms-text-size-adjust:100%;
+			-webkit-text-size-adjust:100%;
+		}
+		.thread-item.expanded .thread-body .body, .msg-body {
+			width: 100% !important;
+			display: block !important;
+		}
+    .ReadMsgBody,
+    .ExternalClass {
+			width: 100%;
+			background-color: #f4f4f4;
+    }
+		.ExternalClass,
+		.ExternalClass p,
+		.ExternalClass span,
+		.ExternalClass font,
+		.ExternalClass td,
+		.ExternalClass div {
+			line-height:100%;
+    }
+    table {
+			border-spacing:0;
+    }
+    table,
+    td {
+			border-collapse:collapse;
+			mso-table-lspace:0pt;
+			mso-table-rspace:0pt;
+    }
+    img {
+    	-ms-interpolation-mode: bicubic;
+    	max-width:100% !important; 
+	    height: auto !important;
+    }
+    img,
+    a img {
+    	border:0;
+    	outline:none;
+    	text-decoration:none;	    
+    }
+    .yshortcuts a {
+			border-bottom: none !important;
+    }
+    a[href^=tel],
+		.mobile_link,
+		.mobile_link a {
+	    color:#222222 !important;
+			text-decoration: underline !Important;
+    }
+
+
+img[class="ImageURL"] {
+      max-width:100% !important; 
+      height: auto !important;
+}
+
+img[class="responsive"] {
+      max-width:100% !important; 
+      height: auto !important;
+}
+
+table[class="fluid"] {
+	width: 100% !important;
+}
+
+.ObjFull {
+	display : block;
+	width : auto;
+	max-height: inherit;
+	overflow : visible;
+	float : none;
+	visibility:visible;
+	overflow:visible;
+	line-height:normal;
+}
+.ObjFullMed {
+	display : block;
+	width : auto;
+	max-height: inherit;
+	overflow : visible;
+	float : none;
+	visibility:visible;
+	overflow:visible;
+	line-height:normal;
+}
+.ObjMed {
+	display: none !important;
+	font-size: 0; 
+	max-height: 0; 
+	line-height: 0; 
+	padding: 0;
+	mso-hide: all;
+	visibility: hidden;
+	overflow: hidden;
+}
+.ObjSmall {
+	display: none !important;
+	font-size: 0; 
+	max-height: 0; 
+	line-height: 0; 
+	padding: 0;
+	mso-hide: all;
+	visibility: hidden;
+	overflow: hidden;
+}
+
+@media screen and (max-width:800px) {
+	table {
+		width:100% !important;
+	}
+
+	table[class="email-container"] {
+		width: 100% !important;
+	}
+	table[class="fluid"] {
+		width: 100% !important;
+	}
+	img[class="fluid"],
+	img[class="force-col-center"],
+	img[class="ImageURL"],
+	img[class="responsive"] {
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+	}
+		img[class="force-col-center"] {
+		margin: auto !important;
+	}
+	
+	td[class="force-col"],
+	td[class="force-col-center"] {
+		display: block !important;
+		width: 100% !important;
+		clear: both;
+	}
+	td[class="force-col-center"] {
+		text-align: center !important;
+	}
+	
+	img[class="col-3-img-l"] {
+		float: left;
+		margin: 0 15px 15px 0;
+	}
+	img[class="col-3-img-r"] {
+		float: right;
+		margin: 0 0 15px 15px;
+	}
+	
+	table[class="button"] {
+		width: 100% !important;
+	}   
+}
+    
+@media screen and (max-device-width: 480px), screen and (max-width: 480px) {
+
+	div[class="hh-visible"] {
+		display: block !important;
+	}
+	
+	div[class="hh-center"] {
+		text-align: center;
+		width: 100% !important;
+	}
+	
+	table[class="hh-fluid"] {
+		width: 100% !important;
+	}
+	
+	img[class="hh-fluid"],
+	img[class="hh-force-col-center"] {
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+	}
+	img[class="hh-force-col-center"] {
+		margin: auto !important;
+	}
+		td[class="hh-force-col"],
+	td[class="hh-force-col-center"] {
+		display: block !important;
+		width: 100% !important;
+		clear: both;
+	}
+	td[class="hh-force-col-center"] {
+		text-align: center !important;
+	}
+	
+	img[class="col-3-img-l"],
+	img[class="col-3-img-r"] {
+		float: none !important;
+		margin: 15px auto !important;
+		text-align: center !important;
+	}
+	.ObjFull {	
+	display: none; 
+	font-size: 0; 
+	max-height: 0; 
+	line-height: 0; 
+	mso-hide: all;
+	visibility: hidden;
+	overflow: hidden;
+}
+	.ObjSmall {
+	display: none; 
+	font-size: 0; 
+	max-height: 0; 
+	line-height: 0; 
+	mso-hide: all; 
+	visibility: hidden;
+	overflow: hidden;
+}
+	.ObjMed {	
+	display : block !important;
+	width : auto !important;
+	line-height:normal !important;
+	max-height: inherit !important;
+	overflow : visible !important;
+	float : none !important;
+	visibility:visible !important;
+	overflow:visible !important;
+}
+	.ObjFullMed {	
+	display : block !important;
+	width : auto !important;
+	line-height:normal !important;
+	max-height: inherit !important;
+	overflow : visible !important;
+	float : none !important;
+	visibility:visible !important;
+	overflow:visible !important;
+}
+}
+@media screen and (max-device-width: 375px), screen and (max-width: 375px) {
+
+#HeaderNavBar {	
+	display: none; 
+	font-size: 0; 
+	max-height: 0; 
+	line-height: 0; 
+	mso-hide: all; 
+	visibility: hidden;
+	overflow: hidden;
+}
+.ObjFull {	
+	display: none; 
+	font-size: 0; 
+	max-height: 0; 
+	line-height: 0; 
+	mso-hide: all; 
+	visibility: hidden;
+	overflow: hidden;
+}
+	.ObjMed {	
+	display: none !important;
+	font-size: 0 !important;
+	max-height: 0 !important;
+	line-height: 0 !important; 
+	mso-hide: all !important; 
+	visibility: hidden !important;
+	overflow: hidden !important;
+}
+	.ObjFullMed {	
+	display: none !important;
+	font-size: 0 !important;
+	max-height: 0 !important;
+	line-height: 0 !important; 
+	mso-hide: all !important; 
+	visibility: hidden !important;
+	overflow: hidden !important;
+}
+	.ObjSmall {
+	display : block !important;
+	width : auto !important;
+	max-height: inherit !important;
+	line-height:normal !important;
+	overflow : visible !important;
+	float : none !important;
+	visibility:visible !important;
+	overflow:visible !important;
+}
+}
+  </style>
+</head>
+
+<body bgcolor="#e1e3e0">
+<center>
+<table width="640"  border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="font-family:Helvetic, arial;">
+  <tr>
+   <td>
+     <table width="640" border="0" cellpadding="0" cellspacing="0" bgcolor="#e1e3e0">
+       <tr>
+         <td align="center"><p style="font-size:2pt">&#160;</p><p style="font-family:Arial, Helvetica,
+sans-serif; font-size:8pt">If you can't view this e-mail, please click<a href="http://multibriefs.com/briefs/npf/Sept.html">here</a>. </p><p style="font-size:2pt">&#160;</p>
+         </td>
+       </tr>
+     </table>
+     
+<!--Body-->
+     <table width="600" align="center" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+       <tr>
+        <td>
+          <table width="600" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="padding:25px;">
+           <tr>
+             <td align="center"><h1 style="font-family: Helvetica,arial;">Get ready for Next Influenza Season with Xpress Flu Tests</h1>
+             </td>
+           </tr>
+           <tr>
+             <td align="center"><img src="http://www.cepheid.com/administrator/components/com_productcatalog/product-imgs/thumbs/large-67c1568d4436256ee10ec6b20516b642-56de1c86d6cfb3a6d0abeffae892ef73-Xpert-C-difficile.png" title="Xpert C. Difficile image" alt="Xpert Xpress Flu/RSV" width="290" height="88" style="display: block;">
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: center; font-family: helvetica, arial; padding: 25px;">
+        <p>With the severe&#42; 2016-2017 influenza season behind you NOW is the time to prepare your facility for the next season. Gain new insights to implement and calibrate your current flu testing algorithms for better patient outcomes.</p>
+        <p>Today, the CDC and FDA consider PCR based influenza testing as highly accurate and the new gold standard in testing. Using Cepheid’s Xpert<sup>&#174;</sup> Xpress Flu or Xpert<sup>&#174;</sup> Xpress Flu/RSV “all in one” test cartridge you will have the best in class of rapid PCR tests. </p>
+        <p>Customize your testing protocols NOW with our simple, scalable instrument solutions that are standardized throughout your healthcare system and guarantee the highest quality of rapid PCR results across multiple departments throughout your testing facilities. </p>
+      </td>
+    </tr>
+    
+<!--Extra padding-->    
+    <tr>
+      <td height="35px">&nbsp;</td>
+    </tr>
+            
+ <!--Infographic-->
+    <tr>
+      <td align="center"><img src="https://lorirtaylor.com/wp-content/uploads/2014/09/Infographic.jpg" title="Cepheid infographic image" alt="Cepheid Infographic" width="450" height="" style="display: block;">
+     </td>
+    </tr>
+    
+<!--Extra padding-->    
+    <tr>
+       <td height="35px">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="center"style="font-size: 18px; padding: 25px; font-weight: bold;"><p>Learn about the changes the FDA has implemented in the Flu diagnostic market and the impact to your institution. Two real world examples of successful implementation and utilization of flu testing algorithms in a large health system will also be presented.</p>
+      </td>
+    </tr>
+    
+<!--Extra Padding-->    
+    <tr>
+       <td height="20px">&nbsp;</td>
+    </tr>
+    
+<!--Button-->    
+    <tr>
+      <td>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="center">
+              <div>
+                <!--[if mso]>
+          <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://litmus.com" style="height:36px;v-text-anchor:middle;width:150px;" arcsize="5%" strokecolor="#EB7035" fillcolor="#EB7035">
+            <w:anchorlock/>
+            <center style="color:#ffffff;font-family:Helvetica, Arial,sans-serif;font-size:16px;">I am a button &rarr;</center>
+          </v:roundrect>
+        <![endif]-->
+                
+<!--Button-->
+        <a href="http://buttons.cm" style="background-color:#EB7035;border:1px solid #EB7035;border-radius:3px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;line-height:44px;text-align:center;text-decoration:none;width:350px;-webkit-text-size-adjust:none;mso-hide:all;">Register for this upcoming webinar here.  &rarr;</a>
+      </div>
+    </td>
+  </tr>
+</table>
+</td>
+</tr>    
+<tr>
+  <td align="center" style="font-family: Helvetica, arial; font-size: 16px; padding: 25px;">
+    <p>If your area of interest is infection control or antibiotic stewardship, please <b><a href="https://gateway.on24.com/wcc/gateway/cepheid/1112689/1252047" style="text-decoration: none; color: #007AC3;">click here </a></b>for a recent publication that highlights the impact of rapid PCR tests and the resulting Oseltamivir and antibiotic prescription rates. (Link to previous Dan Green Impact webinar on Cepheid website). </p>
+        
+    <p>The Power of Now, with the new Xpert Xpress family of tests; No-Compromise, quality and ease-of-use in 30 minutes or less.</p>
+
+    <p style="font-style: italic; font-size: 12px;">&#42;According to the CDC, the influenza season of 2016-2017 was widespread and severe, with the ILI tracking 17 weeks above the national threshold and peaking at ILI greater than 5.0%.</p>
+   </td>
+  </tr>
+ </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</center>
+</body>
+</html>
