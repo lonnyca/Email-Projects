@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head>
- <style>
+  <title></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <style type="text/css">
  		body,
 		#bodyTable {
 			height:100% !important;
