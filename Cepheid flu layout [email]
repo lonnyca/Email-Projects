@@ -374,15 +374,14 @@ sans-serif; font-size:8pt">If you can't view this e-mail, please click<a href="h
             <center style="color:#ffffff;font-family:Helvetica, Arial,sans-serif;font-size:16px;">I am a button &rarr;</center>
           </v:roundrect>
         <![endif]-->
-                
-<!--Button-->
         <a href="http://buttons.cm" style="background-color:#EB7035;border:1px solid #EB7035;border-radius:3px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;line-height:44px;text-align:center;text-decoration:none;width:350px;-webkit-text-size-adjust:none;mso-hide:all;">Register for this upcoming webinar here.  &rarr;</a>
       </div>
     </td>
   </tr>
 </table>
 </td>
-</tr>    
+</tr> 
+
 <tr>
   <td align="center" style="font-family: Helvetica, arial; font-size: 16px; padding: 25px;">
     <p>If your area of interest is infection control or antibiotic stewardship, please <b><a href="https://gateway.on24.com/wcc/gateway/cepheid/1112689/1252047" style="text-decoration: none; color: #007AC3;">click here </a></b>for a recent publication that highlights the impact of rapid PCR tests and the resulting Oseltamivir and antibiotic prescription rates. (Link to previous Dan Green Impact webinar on Cepheid website). </p>
